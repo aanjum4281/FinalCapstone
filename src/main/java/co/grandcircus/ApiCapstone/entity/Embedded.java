@@ -4,21 +4,21 @@ import java.util.List;
 
 public class Embedded {
 
-	private List<Events> events;
+	private List<IndEvent> events;
 
 	public Embedded() {
 	}
 
-	public Embedded(List<Events> events) {
+	public Embedded(List<IndEvent> events) {
 		super();
 		this.events = events;
 	}
 
-	public List<Events> getEvents() {
+	public List<IndEvent> getEvents() {
 		return events;
 	}
 
-	public void setEvents(List<Events> events) {
+	public void setEvents(List<IndEvent> events) {
 		this.events = events;
 	}
 
@@ -26,7 +26,7 @@ public class Embedded {
 	public String toString() {
 		return "Embedded [events=" + events + "]";
 	}
-	
+
 	
 	
 }

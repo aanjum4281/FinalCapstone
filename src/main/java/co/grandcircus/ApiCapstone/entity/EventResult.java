@@ -1,27 +1,24 @@
 package co.grandcircus.ApiCapstone.entity;
 
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
+@JsonIgnoreProperties(ignoreUnknown=true)
 public class EventResult {
-
-	private List<Embedded> embedded;
+	@JsonProperty("_embedded")
+	private Embedded embedded;
 	
 	public EventResult() {
 	}
 
-	public EventResult(List<Embedded> embedded) {
-		super();
-		this.embedded = embedded;
-	}
-
-	public List<Embedded> getEmbedded() {
+	public Embedded getEmbedded() {
 		return embedded;
 	}
 
-	public void setEmbedded(List<Embedded> embedded) {
+	public void setEmbedded(Embedded embedded) {
 		this.embedded = embedded;
 	}
 	
 	
-	
+
 }

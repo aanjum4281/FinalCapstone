@@ -1,5 +1,7 @@
 package co.grandcircus.ApiCapstone;
 
+import java.util.List;
+
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -24,21 +26,24 @@ public class EventController {
 	public ModelAndView showList() {
 		ModelAndView mav = new ModelAndView("display");
 		
-RestTemplate restTemplate = new RestTemplate();
+		RestTemplate restTemplate = new RestTemplate();
 		
-		HttpHeaders headers = new HttpHeaders();
-		headers.add(HttpHeaders.USER_AGENT, "Hi");
+//		HttpHeaders headers = new HttpHeaders();
+//		headers.add(HttpHeaders.USER_AGENT, "Hi");
 		
-		String url = "https://app.ticketmaster.com/discovery/v2/events.json?size=1&apikey=2Z0zFqJrUytucwLNkdNxHkLnAXonV1PP";
+//		String url = "https://app.ticketmaster.com/discovery/v2/events.json?size=1&apikey=2Z0zFqJrUytucwLNkdNxHkLnAXonV1PP";
+		String url = "https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&apikey=2Z0zFqJrUytucwLNkdNxHkLnAXonV1PP";
 		
 		ResponseEntity<EventResult> response = restTemplate.exchange(
-				url, HttpMethod.GET, new HttpEntity<>(headers),EventResult.class);
+				url, HttpMethod.GET, new HttpEntity<>(null),EventResult.class);
 		
 		EventResult result = response.getBody();
 		
-		mav.addObject("events", result.getEmbedded());
+		System.out.println(result.getEmbedded().getEvents());
 		
-		System.out.println(result.getEmbedded());
+		mav.addObject("events", result.getEmbedded().getEvents());
+		
+		System.out.println(result);
 		return mav;
 	}
 }

@@ -39,7 +39,7 @@
 
 	<c:forEach var="event" items="${ events }">
 		<div>
-			<h3>${event.events.name}</h3>
+			<h5>${event.name}</h5>
 			
 		</div>
 	</c:forEach>
