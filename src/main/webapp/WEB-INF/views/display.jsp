@@ -11,7 +11,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="#"></a>
-  <img src="https://s8.postimg.cc/4sle4c91h/event_Hub.jpg" alt="" height="50" width="50">
+  <img src="https://s8.postimg.cc/b01di3h9x/newlogo.png" alt="" height="50" width="50">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

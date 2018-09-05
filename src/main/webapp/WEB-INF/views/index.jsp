@@ -11,7 +11,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="#"></a>
-  <img src="https://s8.postimg.cc/4sle4c91h/event_Hub.jpg" alt="" height="50" width="50">
+  <img src="https://s8.postimg.cc/b01di3h9x/newlogo.png" alt="" height="50" width="50">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -35,15 +35,26 @@
 </head>
 
 <body>
-<<<<<<< Updated upstream
-<div class="jumbotron">
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-</div>
 
+<div class="jumbotron">
+<img src="https://png2.kisspng.com/20180314/wle/kisspng-tourism-flat-design-computer-icons-beach-flat-views-of-the-city-vector-5aa9abc15443f4.2639112415210689933452.png" alt="" height="150" width="200">
+  <hr class="my-4">
+  <p>Find Your Next Experience!</p>
+	</div>
+	<div class="container">
+ 
+<form action="/results" method="post">
+
+<div class="input-group">
+    <select name="genre" class="custom-select" id="inputGroupSelect">
+    <option selected>Select Your Genre</option>
+    <option value="1">Genre 1</option>
+    <option value="2">Genre 2</option>
+    <option value="2">Genre 3</option>
+    </select>
+  <div class="input-group-append">
+    <button class="btn btn-outline-primary" type="submit">Find Your Tickets</button>
+  </div>
+	 </div>
 </body>
 </html>
