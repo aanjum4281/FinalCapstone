@@ -11,7 +11,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="#"></a>
-  <img src="https://s8.postimg.cc/b01di3h9x/newlogo.png" alt="" height="50" width="50">
+  <img src="https://s8.postimg.cc/b01di3h9x/newlogo.png" alt="" height="65" width="70">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -33,14 +33,17 @@
 </nav>
 </head> 
 </head>
-<body>
-
-<h3>Detroit Area Events</h3>
+<body>\
+<h3></h3>
 
 	<c:forEach var="event" items="${ events }">
 		<div>
+<<<<<<< Updated upstream
 			<h5>${event.name}</h5>
 			
+=======
+			<h3>${event.events.name}</h3>		
+>>>>>>> Stashed changes
 		</div>
 	</c:forEach>
 
