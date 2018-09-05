@@ -35,5 +35,14 @@
 </head>
 <body>
 
+<h3>Detroit Area Events</h3>
+
+	<c:forEach var="event" items="${ events }">
+		<div>
+			<h3>${event.events.name}</h3>
+			
+		</div>
+	</c:forEach>
+
 </body>
 </html>

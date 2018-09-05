@@ -21,6 +21,11 @@ public class Embedded {
 	public void setEvents(List<Events> events) {
 		this.events = events;
 	}
+
+	@Override
+	public String toString() {
+		return "Embedded [events=" + events + "]";
+	}
 	
 	
 	
