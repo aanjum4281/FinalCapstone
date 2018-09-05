@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 public class IndEvent {
 
-//	private String id;
+	private String id;
 	private String name;
 //	private String dates;
 //	private String classifications;
@@ -16,6 +16,14 @@ public class IndEvent {
 	public IndEvent() {
 		}
 
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -24,5 +32,6 @@ public class IndEvent {
 		this.name = name;
 	}
 
+	
 	
 }

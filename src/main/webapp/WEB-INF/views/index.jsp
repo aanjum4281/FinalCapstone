@@ -3,10 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< Updated upstream
 <meta charset="UTF-8">
 <title>Insert title here</title>
-=======
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/flatly/bootstrap.min.css" />
 <link rel="stylesheet" href="/styles.css" />
@@ -35,27 +33,24 @@
   </div>
 </nav>
 </head> 
->>>>>>> Stashed changes
 </head>
 <body>
-<<<<<<< Updated upstream
-It worked!
-=======
 
 <img src="https://s8.postimg.cc/4vegir6x1/header.png" alt="party">
 
 <div class="jumbotron">
   <center>
-  <h1> Choose Your Genre </h1> 
+  <h1> Choose Your artist </h1> 
   
-  <form action="/results" method="post">
+  <form action="/display" method="get">
   
   <div class="input-group">
-    <select name="genre" class="custom-select" id="inputGroupSelect">
+    <select name="name" class="custom-select" id="inputGroupSelect">
     <option selected>Choose Here</option>
-    <option value="1">Genre 1</option>
-    <option value="2">Genre 2</option>
-    <option value="2">Genre 3</option>
+    <option value="BTS">BTS</option>
+    <option value="Aubrey & The Three Migos">Aubrey & The Three Migos</option>
+    <option value="P!NK">P!NK</option>
+    <option value="Nick Cannon">Nick Cannon</option>
     </select>
   <div class="input-group-append">
     <button class="btn btn-outline-primary" type="submit">Find Your Tickets</button>
@@ -69,6 +64,5 @@ It worked!
 	 </form>
 	 
 	 </div>
->>>>>>> Stashed changes
 </body>
 </html>

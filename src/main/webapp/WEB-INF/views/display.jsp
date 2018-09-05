@@ -38,12 +38,11 @@
 
 	<c:forEach var="event" items="${ events }">
 		<div>
-<<<<<<< Updated upstream
 			<h5>${event.name}</h5>
 			
-=======
-			<h3>${event.events.name}</h3>		
->>>>>>> Stashed changes
+			<button a href=“/details?id=${ event.id }” class=“btn btn-light btn-sm”>Details</button>
+            <button a href=“/add-to-favorites?id=${event.id }” class=“btn btn-light btn-sm”>Add to favorites</button>
+			
 		</div>
 	</c:forEach>
 
