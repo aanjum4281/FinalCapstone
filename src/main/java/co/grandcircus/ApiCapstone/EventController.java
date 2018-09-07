@@ -33,7 +33,7 @@ public class EventController {
 //		String url = "https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&apikey=2Z0zFqJrUytucwLNkdNxHkLnAXonV1PP";
 		
 		ResponseEntity<EventResult> response = restTemplate.exchange(
-				url, HttpMethod.GET, new HttpEntity<>(null),EventResult.class);
+		      url, HttpMethod.GET, new HttpEntity<>(null),EventResult.class);
 		
 		EventResult result = response.getBody();
 		

@@ -3,8 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/flatly/bootstrap.min.css" />
 <link rel="stylesheet" href="/styles.css" />
@@ -60,7 +59,6 @@
 
   </div>
 	 </div>
-	 
 	 </form>
 	 
 	 </div>
